@@ -1,12 +1,32 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import DirectoryPage from './pages/DirectoryPage';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<div><h1>Directory</h1><Link to="/providers/test">test link</Link></div>} />
-      <Route path="/providers/:id" element={<h1>Profile</h1>} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<DirectoryPage />} />
+        <Route path="/providers/:id" element={<ProfilePage />} />
+        <Route
+          path="*"
+          element={
+            <p style={{ padding: 32 }}>
+              Page not found. <Link to="/">Back to all providers</Link>
+            </p>
+          }
+        />
+      </Routes>
+    </>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  return null;
 }
 
 export default App;

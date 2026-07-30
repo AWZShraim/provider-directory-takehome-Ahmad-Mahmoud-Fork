@@ -1,0 +1,41 @@
+.bio,
+.bioClamped {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-body-3);
+  line-height: var(--line-height-body-3);
+  color: var(--color-text-muted);
+  white-space: pre-line;
+}
+
+.bioClamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: var(--space-1);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  vertical-align: middle;
+}
+
+.caretUp {
+  border-top: none;
+  border-bottom: 5px solid currentColor;
+}
+
+.toggle {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-link);
+  font-size: var(--font-size-label-4);
+  font-family: inherit;
+  cursor: pointer;
+}
