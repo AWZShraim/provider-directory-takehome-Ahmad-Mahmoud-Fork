@@ -21,7 +21,7 @@ error, so I added `--openssl-legacy-provider` to the start and build scripts.
   changing the provided file.
 - `avatarUrl` is empty for every record, so photos fall back to a placeholder
   from the design file.
-- Professional titles ("Registered Social Worker") aren't in the API — `title`
+- Professional titles ("Registered Social Worker") aren't in the API, `title`
   holds credentials, so I sourced them from each bio into a lookup keyed by id.
 - Count line is derived from the data rather than the design's hardcoded
   "17 providers in Ontario", since two providers are in Quebec.
