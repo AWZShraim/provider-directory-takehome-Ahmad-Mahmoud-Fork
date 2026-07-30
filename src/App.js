@@ -1,29 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import {fetchProviders, fetchProvider} from "./api";
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-  // Samples of API requests
-  fetchProviders().then(console.log)
-  fetchProvider("1").then(console.log)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<div><h1>Directory</h1><Link to="/providers/test">test link</Link></div>} />
+      <Route path="/providers/:id" element={<h1>Profile</h1>} />
+    </Routes>
   );
 }
 

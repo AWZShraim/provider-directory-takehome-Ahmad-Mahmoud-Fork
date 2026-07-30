@@ -1,0 +1,99 @@
+:root {
+  /* ================= COLOR ================= */
+
+  /* ---------- Neutral ---------- */
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-1: #FAFAFA;
+  --color-neutral-2: #F6F7F7;
+  --color-neutral-3: #EEEEEE;
+  --color-neutral-4: #DFE1E6;
+  --color-neutral-5: #C6C9CF;
+  --color-neutral-6: #A9AEB7;
+  --color-neutral-7: #6E7178;
+  --color-neutral-8: #3F4145;
+  --color-neutral-9: #1C1E24;
+
+  /* ---------- Primary (THVC purple) ---------- */
+  --color-primary-1: #F6F4F7;
+  --color-primary-2: #EDEAF0;
+  --color-primary-5: #4B286D;
+
+  /* ---------- Secondary (blue-violet) ---------- */
+  --color-secondary-2: #EFF1FE;
+  --color-secondary-5: #6277F0;
+
+
+  /* ================= SEMANTIC ALIASES ================= */
+  --color-bg-page: var(--color-neutral-2);
+  --color-bg-surface: var(--color-neutral-0);
+  --color-border: var(--color-neutral-4);
+
+  --color-text-primary: var(--color-neutral-9);   /* provider names, headings */
+  --color-text-secondary: var(--color-neutral-8); /* profile detail values, badge text */
+  --color-text-muted: var(--color-neutral-7);     /* subtitles, bios, breadcrumb */
+  --color-text-inverse: var(--color-neutral-0);   /* text on the purple button */
+
+  --color-link: var(--color-secondary-5);         /* "Read more" / "Read less" */
+  --color-action: var(--color-primary-5);         /* "Book with us" fill */
+  --color-badge-bg: var(--color-secondary-2);     /* availability pill bg */
+
+
+  /* ================= TYPOGRAPHY ================= */
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Sub-Heading/3 — "Browse our providers" (page title) */
+  --font-size-subheading-3: 24px;
+  --line-height-subheading-3: 1.2;
+
+  /* Label/5 — provider name on card */
+  --font-size-label-5: 16px;
+  --line-height-label-5: 1.2;
+
+  /* Button/4 — "Book with us" */
+  --font-size-button-4: 18px;
+  --line-height-button-4: 1;
+
+  /* Input Text/3 — "Mental Wellness" page subtitle */
+  --font-size-input-3: 14.8px;
+  --line-height-input-3: 1.2;
+
+  /* Label/4 — "Read more" / "Read less" link */
+  --font-size-label-4: 14.8px;
+  --line-height-label-4: 1.2;
+
+  /* Label/3 — profile detail values (Toronto, Ontario) */
+  --font-size-label-3: 14px;
+  --line-height-label-3: 1.2;
+
+  /* Body/3 — provider bio paragraph */
+  --font-size-body-3: 14px;
+  --line-height-body-3: 1.4;
+
+  /* Input Text/1 — card subtitle, breadcrumb, small labels */
+  --font-size-input-1: 12px;
+  --line-height-input-1: 1.2;
+
+  /* Badge/2 — "Available tomorrow" */
+  --font-size-badge-2: 12px;
+  --line-height-badge-2: 1.1;
+
+  /* Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+
+  /* ================= SPACING ================= */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+
+  /* ================= RADIUS ================= */        
+  --radius-badge: 999px;
+  --radius-button: 999px;
+}
